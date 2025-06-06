@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foodiespot - Explore Innovative Foods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .food-card img { height: 180px; object-fit: cover; }
+    .navbar-brand { font-weight: bold; }
+    .category-link { text-decoration: none; color: inherit; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Foodiespot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="healthy.html">
+              <img src="./vegetables.jpeg" alt="Healthy" style="height:24px;width:24px;object-fit:cover;border-radius:50%;margin-right:6px;">
+              Healthy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="breakfast.html">
+              <img src="./Breakfast.jpg" alt="Breakfast" style="height:24px;width:24px;object-fit:cover;border-radius:50%;margin-right:6px;">
+              Breakfast
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="desserts.html">
+              <img src="./Donut.jpeg" alt="Desserts" style="height:24px;width:24px;object-fit:cover;border-radius:50%;margin-right:6px;">
+              Desserts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Welcome to Foodiespot</h1>
+      <p class="lead">Explore our mouth-watering gallery of dishes, handpicked from our chef's favorites and customer bestsellers!</p>
+    </div>
+  </section>
+
+  <!-- Innovation Carousel Section -->
+  <div id="innovationCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#innovationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#innovationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#innovationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner rounded shadow">
+      <div class="carousel-item active">
+        <img src="./Donut.jpeg" class="d-block w-100" style="height:350px;object-fit:cover;" alt="Dessert Innovation">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>AI-Powered Dessert Recommendations</h5>
+          <p>Let our smart system suggest the perfect sweet treat for your mood!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./vegetables.jpeg" class="d-block w-100" style="height:350px;object-fit:cover;" alt="Healthy Innovation">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Personalized Healthy Meal Plans</h5>
+          <p>Get daily meal plans tailored to your health goals and preferences.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Breakfast.jpg" class="d-block w-100" style="height:350px;object-fit:cover;" alt="Breakfast Innovation">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Order Breakfast Before You Wake Up</h5>
+          <p>Schedule your favorite breakfast to arrive fresh as you start your day!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#innovationCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#innovationCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Food Gallery Section -->
+  <div class="container my-5">
+    <h2 class="mb-4 text-center">Our Food Gallery</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./vegetables.jpeg" class="card-img-top" alt="Fresh Vegetables">
+          <div class="card-body">
+            <h5 class="card-title">Fresh Vegetables</h5>
+            <p class="card-text">Organic and healthy veggies for every meal.</p>
+            <span class="badge bg-success">Healthy</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./Breakfast.jpg" class="card-img-top" alt="Breakfast Specials">
+          <div class="card-body">
+            <h5 class="card-title">Breakfast Specials</h5>
+            <p class="card-text">Start your day with our delicious breakfast combos.</p>
+            <span class="badge bg-warning text-dark">Morning Favorite</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./Burger.jpeg" class="card-img-top" alt="Classic Burger">
+          <div class="card-body">
+            <h5 class="card-title">Classic Burger</h5>
+            <p class="card-text">Juicy burgers with fresh ingredients.</p>
+            <span class="badge bg-danger">Popular</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./chicken.jpg" class="card-img-top" alt="Chicken Feast">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Feast</h5>
+            <p class="card-text">Tender and flavorful chicken dishes.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./dinner.jpg" class="card-img-top" alt="Dinner Platter">
+          <div class="card-body">
+            <h5 class="card-title">Dinner Platter</h5>
+            <p class="card-text">Sumptuous dinner sets for the whole family.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./Donut.jpeg" class="card-img-top" alt="Donut Delights">
+          <div class="card-body">
+            <h5 class="card-title">Donut Delights</h5>
+            <p class="card-text">Sweet and colorful donuts for your cravings.</p>
+            <span class="badge bg-pink" style="background:#e83e8c;">Dessert</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./meal.jpg" class="card-img-top" alt="Healthy Meal">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Meal</h5>
+            <p class="card-text">Balanced meals for a healthy lifestyle.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./noodle.jpeg" class="card-img-top" alt="Noodle Bowl">
+          <div class="card-body">
+            <h5 class="card-title">Noodle Bowl</h5>
+            <p class="card-text">Slurp-worthy noodles with rich flavors.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./pizza.jpeg" class="card-img-top" alt="Cheesy Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Cheesy Pizza</h5>
+            <p class="card-text">Hot and cheesy pizzas with fresh toppings.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./Salad.jpeg" class="card-img-top" alt="Fresh Salad">
+          <div class="card-body">
+            <h5 class="card-title">Fresh Salad</h5>
+            <p class="card-text">Crisp salads with a variety of dressings.</p>
+            <span class="badge bg-success">Vegan</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 11 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./ice cream bowl.jpg" class="card-img-top" alt="Ice Cream Bowl">
+          <div class="card-body">
+            <h5 class="card-title">Ice Cream Bowl</h5>
+            <p class="card-text">Creamy ice cream with your favorite toppings.</p>
+            <span class="badge bg-info text-dark">Cool Treat</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 12 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./ice cream cone.jpg" class="card-img-top" alt="Ice Cream Cone">
+          <div class="card-body">
+            <h5 class="card-title">Ice Cream Cone</h5>
+            <p class="card-text">Classic cones with a modern twist.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 13 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./bread roast.jpg" class="card-img-top" alt="Bread Roast">
+          <div class="card-body">
+            <h5 class="card-title">Bread Roast</h5>
+            <p class="card-text">Toasted bread with savory fillings.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 14 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./fish fry.jpg" class="card-img-top" alt="Fish Fry">
+          <div class="card-body">
+            <h5 class="card-title">Fish Fry</h5>
+            <p class="card-text">Crispy and spicy fried fish.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 15 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./wings.jpeg" class="card-img-top" alt="Chicken Wings">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Wings</h5>
+            <p class="card-text">Juicy wings with a variety of sauces.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 16 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./samosa.jpg" class="card-img-top" alt="Samosa">
+          <div class="card-body">
+            <h5 class="card-title">Samosa</h5>
+            <p class="card-text">Crispy samosas with spicy filling.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 17 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./momos.jpg" class="card-img-top" alt="Momos">
+          <div class="card-body">
+            <h5 class="card-title">Momos</h5>
+            <p class="card-text">Steamed dumplings with delicious stuffing.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 18 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./noodle.jpeg" class="card-img-top" alt="Noodle Special">
+          <div class="card-body">
+            <h5 class="card-title">Noodle Special</h5>
+            <p class="card-text">A special bowl of noodles for every mood.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 19 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./chicken.jpg" class="card-img-top" alt="Chicken Special">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Special</h5>
+            <p class="card-text">Our chef's favorite chicken recipe.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 20 -->
+      <div class="col">
+        <div class="card food-card h-100">
+          <img src="./fried chicken.jpg" class="card-img-top" alt="Fried Chicken">
+          <div class="card-body">
+            <h5 class="card-title">Fried Chicken</h5>
+            <p class="card-text">Crispy fried chicken, golden and juicy.</p>
+            <span class="badge bg-primary">Special</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <h5 class="mb-2">About Foodiespot</h5>
+      <p class="mb-3" style="max-width:600px;margin:auto;">
+        Foodiespot is your gateway to a universe of innovative, delicious, and diverse foods. 
+        We bring together the best of healthy, breakfast, and dessert options, all curated with passion and quality. 
+        Whether you crave a nutritious meal, a hearty breakfast, or a sweet treat, Foodiespot is here to serve you with freshness and creativity every day.
+      </p>
+      <div class="mb-2">
+        <strong>Contact us:</strong> support@foodiespot.com | +91 98765 43210
+      </div>
+      <div>
+        Designed with ❤️ by MUGILAN S
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
